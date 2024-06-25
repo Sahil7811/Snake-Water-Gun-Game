@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(158, 249, 255);
+}
+h1{
+    color: white;
+    font-size: 3rem;
+    background-color: rgb(0, 69, 109);
+    height: 5rem;
+    line-height: 5rem;   /*to make the heading vertically centered*/
+}
+.choices{
+    display: flex;  /* to make the div align horizontally */
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+.choice {
+    border: 5px solid rgb(255, 255, 255);
+    height: 150px;
+    width: 150px;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.choice:hover{
+    /* opacity: 0.5; */
+    cursor: pointer;
+    border: 5px solid rgb(0, 69, 109) ;
+}
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;  /* to make the border of images round */
+    object-fit: contain;  /*to make the images as they were before, without any contraction*/
+}
+.scores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 2rem;
+    margin-top: 7rem;
+}
+#user-score, #comp-score{
+    font-size: 3rem;
+}
+.msg-box{
+    margin-top: 2rem;
+}
+#msg{
+    background-color: rgb(0, 69, 109);
+    color: white;
+    font-size: 3rem;
+    display: inline;  /* to make the backgroung limited to text */
+    padding: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
